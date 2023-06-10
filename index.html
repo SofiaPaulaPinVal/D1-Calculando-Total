@@ -22,7 +22,7 @@
 
         <form id="formulario" class="datos">     
             <input placeholder="Ingrese Cantidad" name="cantidad" id="cantidad" type="text">
-            <input placeholder="Ingrese Color" name="color" id="color" type="text">
+            <input placeholder="Ingrese Color" name="color" id="colorInput" type="color">
         </form>
 
         <div class="precio"> 
@@ -33,9 +33,11 @@
     </div>
 
     <div id="resumen" class="resumen">
-        <h4 id="totalprecio"></h4>
-        <h4 id="totalcantidad"></h4>
-        <h4 id="colorelegido"></h4>
+        <ul>
+            <li id="totalprecio"></li>
+            <li id="totalcantidad"></li>
+            <li id="colorelegido"></li>
+        </ul>
     </div>
 
 </main>
