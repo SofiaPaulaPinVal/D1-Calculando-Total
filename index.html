@@ -15,25 +15,31 @@
 
 <body class="">
     
+<main class="main">
     <div class="product-card">
         <img src="/assets/imgs/comp.png" alt="Producto">
             <h3>Laptop Gamer AMD</h3>
 
-        <form class="datos">     
-            <input placeholder="Ingrese Cantidad" name="" id="cantidad" type="text">
-            <input placeholder="Ingrese Color" name="" id="color" type="text">
+        <form id="formulario" class="datos">     
+            <input placeholder="Ingrese Cantidad" name="cantidad" id="cantidad" type="text">
+            <input placeholder="Ingrese Color" name="color" id="color" type="text">
         </form>
-        <script>
-            titulo = document.querySelector("p")
-            titulo.innerHTML = "Total:"
-        </script>
-        <button onclick="
-            imput = document.querySelector ('cantidad')
-            cuenta = cantidad * $800000;
-        "
-        
-        >Calcular Total</button>
+
+        <div class="precio"> 
+            <h3 id="calculo"></h3>
+        </div>
+
+        <button type='submit' id="total">Calcular Total</button>
     </div>
+
+    <div id="resumen" class="resumen">
+        <h4 id="totalprecio"></h4>
+        <h4 id="totalcantidad"></h4>
+        <h4 id="colorelegido"></h4>
+    </div>
+
+</main>
+
 
 
     

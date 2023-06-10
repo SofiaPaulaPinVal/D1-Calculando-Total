@@ -11,9 +11,15 @@
     
 }
 
+.main {
+    display: flex;
+    flex-direction: row;
+    gap:20px    
+}
+
 .product-card {
     width: 300px;
-    height: 500px;
+    height: 550px;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -50,6 +56,11 @@ form {
     align-items: center;
     justify-content: center;
 }
+.precio {
+    display: flex;
+    width: 100%;
+    text-align: start;
+}
 
 input {
     width: 250px;
@@ -85,4 +96,13 @@ button {
 
 button:hover {
     background-color: black;
+}
+
+.resumen {
+    display: flex;
+    flex: column;
+    border: 1px solid #333;
+    width: 200px;
+    height: 200px;
+    margin-top: 200px;
 }
