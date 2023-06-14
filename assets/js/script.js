@@ -4,6 +4,8 @@ let button = document.getElementById('total');
 
 let calculo = document.getElementById('calculo');
 
+let inputColor = document.getElementById('colorInput')
+
 button.addEventListener('click', hacerCalculo);
 
 function hacerCalculo () {
@@ -14,13 +16,16 @@ function hacerCalculo () {
 
     totalprecio.innerHTML= `Total:  $${total}`;
     totalcantidad.innerHTML=`Cantidad:  ${cantidad}`;
-    function mostrar_imputs (){
-        let colorImput = getElementById("colorImput");
-        colorelegido.innerHTML= `Color:  ${colorImput}`;
-    }
-    colorelegido.innerHTML= `Color:  ${colorImput}`;
-
+    
 }
+
+inputColor.addEventListener('change', (event) =>{
+    console.log(event.target.value);
+    let divColorElegido = document.getElementById('colorelegido');
+    divColorElegido.innerHTML += `<div style=""> Color: ${event.target.value}</div>`;
+    divColorElegido.style.backgroundColor = event.target.value;
+})
+
 
 
 
